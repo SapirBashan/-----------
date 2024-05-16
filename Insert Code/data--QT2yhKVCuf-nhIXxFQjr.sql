@@ -1,0 +1,70 @@
+DROP TABLE IF EXISTS `myTable`;
+
+CREATE TABLE `myTable` (
+  `id` mediumint(8) unsigned NOT NULL auto_increment,
+  `uName` varchar(255) default NULL,
+  `unitId` TEXT default NULL,
+  PRIMARY KEY (`id`)
+) AUTO_INCREMENT=1;
+
+INSERT INTO `myTable` (`uName`,`unitId`)
+VALUES
+-- Insert 200 random short names
+INSERT INTO `Units` (`uName`,`unitId`)
+VALUES
+  ("Adam Johnson","Lorem ipsum dolor sit amet"),
+  ("Ella Davis","consectetuer adipiscing elit"),
+  ("Noah Wilson","Integer aliquam adipiscing lacus"),
+  ("Olivia Martinez","Ut nec urna et arcu imperdiet"),
+  ("Liam Anderson","Duis at lacus"),
+  ("Ava Taylor","Quisque purus sapien"),
+  ("Mia Thomas","gravida non"),
+  ("Lucas Moore","sollicitudin a"),
+  ("Amelia Jackson","malesuada id"),
+  ("Ethan White","erat"),
+  -- Add more names as needed
+  ("Sophia Harris", "scelerisque sed"),
+  ("James Parker", "Nunc pulvinar arcu et pede"),
+  ("Isabella Clark", "Nunc sed orci lobortis"),
+  ("Alexander Lewis", "Phasellus libero mauris"),
+  ("Charlotte Robinson", "aliquam eu"),
+  ("Michael Walker", "accumsan sed"),
+  ("Emily Hall", "facilisis vitae"),
+  ("Benjamin Young", "orci"),
+  ("Abigail Allen", "Phasellus dapibus quam"),
+  ("Daniel Scott", "quis diam"),
+  ("Harper Wright", "Pellentesque habitant"),
+  ("Matthew King", "tristique senectus"),
+  ("Oliver Hill", "netus et malesuada"),
+  ("William Adams", "fames ac turpis"),
+  ("Sophia Wood", "egestas"),
+  ("Henry Green", "Fusce aliquet magna"),
+  ("Amelia Baker", "a neque"),
+  ("Lucas Allen", "Nullam ut nisi"),
+  ("Elizabeth Mitchell", "a odio semper"),
+  ("Alexander White", "cursus"),
+  ("Mia Perez", "Integer mollis"),
+  ("Ethan Carter", "Integer tincidunt aliquam"),
+  ("Evelyn Roberts", "arcu"),
+  ("Daniel Turner", "Aliquam ultrices iaculis"),
+  ("Harper Scott", "Nam interdum enim"),
+  ("William Adams", "non nisi"),
+  ("Sophia Wood", "Aenean eget metus"),
+  ("Matthew King", "In nec orci"),
+  ("Oliver Hill", "Donec nibh"),
+  ("Emma Lee", "Quisque nonummy ipsum"),
+  ("Sebastian Phillips", "Vivamus sit amet risus"),
+  ("Elizabeth Reed", "Donec egestas"),
+  ("David Young", "Aliquam nec enim"),
+  ("Madison Martin", "Nunc ut erat"),
+  ("James Brown", "Sed nunc est"),
+  ("Avery Evans", "mollis non"),
+  ("Scarlett Turner", "cursus non"),
+  ("Lucas Morris", "egestas a"),
+  ("Chloe Stewart", "dui"),
+  ("Liam Thompson", "Cras pellentesque"),
+  ("Zoey Rivera", "Sed dictum"),
+  ("Mason Hernandez", "Proin eget odio"),
+  ("Penelope Foster", "Aliquam vulputate ullamcorper"),
+  ("Elijah Gonzalez", "Sed eu eros"),
+  ("Grace Butler", "Nam consequat dolor");
