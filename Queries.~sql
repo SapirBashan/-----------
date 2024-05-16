@@ -1,0 +1,12 @@
+-- Non-trivial SELECT queries with subqueries using the Orders table
+
+-- Query 1: Retrieve the names of all suppliers who have provided equipment to more than one warehouse
+SELECT s.Name AS supplier_name
+FROM Suppliers1 s
+WHERE s.supplierId IN (
+    SELECT o.supplier_id
+    FROM Order3 o
+    GROUP BY o.supplier_id
+    HAVING COUNT(DISTINCT o.warehouse_id) > 1
+);
+
