@@ -1,4 +1,4 @@
-CREATE TABLE Soliders
+CREATE TABLE Soliders1
 (
   soliderId INT NOT NULL,
   Rank INT NOT NULL,
@@ -6,5 +6,5 @@ CREATE TABLE Soliders
   enrolmentDate DATE NOT NULL,
   unitId INT NOT NULL,
   PRIMARY KEY (soliderId),
-  FOREIGN KEY (unitId) REFERENCES Units(unitId)
+  FOREIGN KEY (unitId) REFERENCES Unit(unitId)
 );
