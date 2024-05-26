@@ -1,0 +1,7 @@
+CREATE TABLE armyUnit
+(
+  uName VARCHAR2(35) NOT NULL,
+  unitId INT NOT NULL,
+  symbol VARCHAR2(100) NOT NULL,
+  PRIMARY KEY (unitId)
+);
