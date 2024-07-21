@@ -1,3 +1,21 @@
+CREATE TABLE Personal_Info_Soldier (
+  phone_number INT NOT NULL, 
+  soldierId INT NOT NULL, 
+  PRIMARY KEY (phone_number,soldierId),
+  FOREIGN KEY (soldierId) REFERENCES Soldiers(soldierId),
+  FOREIGN KEY (phone_number) REFERENCES Personal_info(phone_number)
+);
+
+
+CREATE TABLE Equipment_Gear (
+    equipment_id INT,
+    gear_id INT,
+    PRIMARY KEY (equipment_id, gear_id),
+    FOREIGN KEY (equipment_id) REFERENCES Equipment(eqtId),
+    FOREIGN KEY (gear_id) REFERENCES GEAR(gear_id)
+);
+
+
 CREATE TABLE Position
 (
   role_ID INT NOT NULL,
