@@ -14,3 +14,4 @@ WHERE
             Warehouse_Equipment_View 
         GROUP BY 
             whId
+    );
