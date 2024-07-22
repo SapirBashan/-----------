@@ -13,3 +13,4 @@ FROM
     Warehouse w
 JOIN
     Equipment e ON w.whId = e.whId;
+                          
